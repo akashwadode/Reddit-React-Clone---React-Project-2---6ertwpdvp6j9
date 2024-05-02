@@ -1,0 +1,31 @@
+.home-main-container {
+  display: flex;
+  padding-top: 16px;
+  height: 100%;
+  width: 100%;
+}
+.home-grid-container {
+  display: grid;
+  column-gap: 18px;
+  width: 100%;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  .grid-item-left {
+   
+  }
+
+  .grid-item-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .home-posts-container{
+      display: flex;
+      flex-direction: column;
+      max-width: 640px;
+      gap: 12px;
+    }
+  }
+
+  .grid-item-right {
+  }
+}

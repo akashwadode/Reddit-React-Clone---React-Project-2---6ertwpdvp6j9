@@ -1,0 +1,106 @@
+.channel-page-container {
+  /* height: 100%; */
+  padding-bottom: 12px;
+  width: 100%;
+}
+
+.channel-page-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--secondary-background-dark);
+  color: #d7dadc;
+  justify-content: center;
+
+  .channel-cover {
+    width: 100%;
+    height: 144px;
+  }
+  .channel-cover-image {
+    width: 100%;
+    height: 144px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .channel-page-details {
+    display: flex;
+    position: relative;
+    /* width: 100%; */
+    padding: 24px 12rem;
+    justify-content: space-between;
+    flex-direction: row;
+    /* padding: 12px 12px 0px 12px; */
+    gap: 22px;
+    .item-left {
+      display: flex;
+      flex-direction: column;
+      > img {
+        position: absolute;
+        top: -12px;
+        border: 2px solid white;
+        width: 80px;
+        height: 80px;
+        border-radius: 9999px;
+      }
+      > h1 {
+        padding-left: 108px;
+      }
+    }
+    .item-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .item-right {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 24px;
+      > button {
+        width: 96px;
+        height: 32px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 45px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+      }
+      .join-btn {
+        background-color: #d7dadc;
+        &:hover {
+          background-color: #ccced1;
+        }
+      }
+      .joined-btn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: #d7dadc;
+      }
+    }
+  }
+}
+
+.channel-post-container {
+  display: grid;
+  column-gap: 18px;
+  margin-top: 12px;
+  width: 100%;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  .grid-item-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .home-posts-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 640px;
+      gap: 12px;
+    }
+  }
+
+  .grid-item-right {
+  }
+}

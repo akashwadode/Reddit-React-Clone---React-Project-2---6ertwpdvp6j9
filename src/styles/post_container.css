@@ -1,0 +1,67 @@
+.post-main-container {
+  border: 1px solid var(--darkTheme-line);
+  background-color: var(--secondary-background-dark);
+  padding: 16px;
+  border-radius: 4px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .post-topbar {
+      display: flex;
+      justify-content: space-between;
+
+      .topbar-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        > p {
+          display: flex;
+          flex-direction: column;
+        }
+        .channel-name {
+          font-size: 16px;
+          color: white;
+        }
+        .post-author{
+          font-size: 14px;
+          color: var(--lowValue-text-dark);
+        }
+        .post-time {
+          font-size: 12px;
+          color: var(--lowValue-text-dark);
+        }
+      }
+
+      .topbar-right {
+        > button {
+          padding: 6px 12px;
+          border-radius: 45px;
+          border: 0px;
+          font-weight: 600;
+          color: white;
+          background-color: var(--blue-background);
+          cursor: pointer;
+          &:hover {
+            background-color: var(--blue-background-hover);
+          }
+        }
+      }
+    }
+
+    .post-description {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+    }
+    .post-asset {
+      display: flex;
+      > img {
+        width: 100%;
+      }
+    }
+    .post-buttons {
+      display: flex;
+    }
+  }
+}

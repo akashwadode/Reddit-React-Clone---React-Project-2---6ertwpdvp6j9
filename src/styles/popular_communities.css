@@ -1,0 +1,49 @@
+.popular-communities-main-container {
+  position: sticky;
+  top: 78px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 380px;
+  background-color: rgb(4, 9, 10);
+  > p {
+    padding: 12px 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #82959b;
+  }
+
+  .community-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    .list-item {
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover{
+        background-color: var(--secondary-background-hover-dark);
+      }
+      .list-item-left {
+        .channel-icon{
+          display: flex;
+          background-color: orange;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .list-item-right {
+        font-weight: 400;
+        font-size: 14px;
+        color: #B8C5C9;
+        >p{
+            text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

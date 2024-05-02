@@ -1,0 +1,82 @@
+.post-buttons-container {
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-weight: 400;
+}
+
+/*  vote button  */
+.vote-button-container {
+}
+.vote-button-container.green {
+  color: var(--upvote-text);
+}
+.vote-button-container.red {
+  color: var(--downvote-text);
+}
+.vote-button-container {
+  background-color: var(--ternary-background-dark);
+  width: 82px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  gap: 12px;
+  > span {
+    font-size: 18px;
+  }
+  .icon {
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .upvote {
+    margin-top: 4px;
+    &:hover {
+      color: var(--upvote-text);
+    }
+  }
+  .downvote {
+    margin-bottom: 4px;
+    &:hover {
+      color: var(--downvote-text);
+    }
+  }
+
+  /* upvote/downvote button press style */
+  .icon.upvote.active {
+    color: var(--upvote-text);
+  }
+  .icon.downvote.active {
+    color: var(--downvote-text);
+  }
+}
+
+
+.comment-button-container,
+.share-button-container {
+  cursor: pointer;
+  background-color: var(--ternary-background-dark);
+  width: 82px;
+  height: 32px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  .comment-btn,
+  .share-btn {
+    font-size: 22px;
+  }
+  > span {
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: #33464c;
+  }
+}

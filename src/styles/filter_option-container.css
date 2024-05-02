@@ -1,0 +1,35 @@
+.filter.option.container {
+  display: flex;
+  user-select: none;
+  flex-direction: row;
+  padding: 8px;
+  gap: 12px;
+  border: 1px solid var(--darkTheme-line);
+  border-radius: 4px;
+  background-color: var(--secondary-background-dark);
+  > div {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 6px 12px;
+    border-radius: 45px;
+    cursor: pointer;
+    align-items: center;
+    color: var(--lowValue-text-dark);
+    .icon {
+      font-size: 18px;
+    }
+    .icon.rocket {
+      font-size: 16px;
+      transform: rotate(-90deg);
+    }
+
+    &:hover {
+      background-color: var(--ternary-background-dark);
+    }
+  }
+  .active {
+    background-color: var(--ternary-background-dark);
+    color: white;
+  }
+}
